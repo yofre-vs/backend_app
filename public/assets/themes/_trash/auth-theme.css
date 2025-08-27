@@ -1,0 +1,85 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body, .body-domain {
+      background-color: #f0f0f0;
+      font-size: 0.8rem;
+        font-family: Arial, sans-serif;
+  font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+width: 100%;
+}
+.domain{
+height: 100%;
+width: 100%;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: space-between ;
+flex-direction: column; 
+      
+}
+.domain.auth .btn-primary{
+  background-color:#671cc9 ;
+  border: 0px;
+}
+.domain.auth a{
+  color:#671cc9 ;
+}
+header, .domain-header{
+  height: 10px;
+
+}
+main, .domain-main{
+
+}
+footer, .domain-footer{
+
+}
+
+    .user-photo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 2px solid #ccc;
+    }
+
+    .user-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .user-dni {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .service-btn {
+      background-color: #e0e0e0;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-size: 16px;
+      color: #333;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      min-width: 120px;
+      transition: background-color 0.3s ease;
+    }
+
+    .service-btn:hover {
+      background-color: #d1d1d1;
+    }

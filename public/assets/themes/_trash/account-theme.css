@@ -1,0 +1,161 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body, .body-domain {
+  background-color: #f9f9f9;
+  font-size: 0.8rem;
+  font-family: Arial, sans-serif;
+  font-family: "Roboto","Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  height: 100%;
+  width: 100%;
+  color: #a2a5b9;
+  font-weight: 300;
+}
+h1,h2,h3,h4,h5{
+  
+  color: #283252;
+  font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.tittle-h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.125;
+    margin-bottom: 6px;
+}
+.tittle-h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.domain{
+height: 100%;
+width: 100%;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: space-between ;
+flex-direction: column; 
+      
+}
+.domain.account .btn-primary{
+  background-color:#671cc9 ;
+  border: 0px;
+}
+.domain.account a{
+  color:#671cc9 ;
+}
+.domain.account .img-circle-container {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+          margin-bottom: 10px;
+    }
+    .currentColor{
+      color: #a2a5b9;
+    }
+header, .domain-header{
+  /*height: 10px;*/
+
+}
+.dropdown-menu{
+     font-size: 0.8rem;
+}
+ .dropdown-toggle::after {
+    display: none;
+  }
+main, .domain-main{
+ width: 750px;
+}
+.domain_launcher{    width: 180px;
+    height: 120px;
+    background-color: #fff;
+  border: 1px solid #e5e5e5;
+  text-decoration: none; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 15px;
+  
+    color: #a2a5b9;
+
+}.domain_launcher:hover{ 
+  border: 1px solid #671cc9; 
+  text-decoration: none; 
+}
+.domain_launcher:hover i,
+.domain_launcher:hover p{
+  color: #671cc9;
+
+}
+.domain_launcher i{
+  font-size: 2.5rem;
+  padding-bottom: 5px;
+  color: #a2a5b9;
+}
+.domain_launcher h3{
+text-align: center;
+    display: block;
+    text-transform: uppercase;
+    color: #a2a5b9;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.domain_launcher p{
+  font-size: 0.8rem;
+  
+    color: #a2a5b9;
+}
+footer, .domain-footer{
+
+}
+
+    .user-photo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 2px solid #ccc;
+    }
+
+    .user-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .user-dni {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .service-btn {
+      background-color: #e0e0e0;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-size: 16px;
+      color: #333;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      min-width: 120px;
+      transition: background-color 0.3s ease;
+    }
+
+    .service-btn:hover {
+      background-color: #d1d1d1;
+    }

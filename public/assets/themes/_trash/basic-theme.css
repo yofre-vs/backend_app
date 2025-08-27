@@ -1,0 +1,27 @@
+html {
+  font-size: 14px; /* 1rem = 14px */
+}
+body{
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     
+}
+
+.basiclyt-single  {
+   background-color: #f0f0f0;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      /*/*align-items: center;
+      justify-content: center;
+      /* Color de fondo opcional */
+      /*font-family: sans-serif;*/
+    }
+
+    /* Estilo del bloque centrado */
+.basiclyt-single .domain {
+      /*background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);*/
+      text-align: center;
+    }

@@ -1,0 +1,62 @@
+:root {
+  /* Paleta base */ 
+  
+    --themecolor: #5013a8; 
+    --themecolor-alter1: #7d34d9; 
+    --themecolor-alter2: #5013a8; 
+    --themecolor-alter3: #e9ddfb;  
+
+    --themecolor-bg: #f0f0f0; 
+    --themecolor-bg-alter2: #F2F2F2; 
+    --themecolor-bg-alter3: #f0f0f0; 
+    --themecolor-bg-alter4: #e9ddfb; 
+
+    --themecolor-border: #ced4da;   /* Primary */
+    --themecolor-border-alter1: #7d34d9;   /* Secondary */
+    --themecolor-border-alter2: #5013a8;   /* Tertiary */
+    --themecolor-border-alter3: #e9ddfb;  /* Suave / alternativo */
+    
+    --themecolor-font: ##212529; 
+    --themecolor-font-altern1: #671cc9; 
+    --themecolor-font-altern2: #671cc9; 
+    --themecolor-font-altern3: #fff; 
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: var(--themecolor-bg);
+  color:   var(--themecolor-font);
+} 
+
+.btn-primary {
+    background-color: var(--themecolor);
+    color:   var(--themecolor-font-altern3);
+    border: none;
+}
+.btn-primary:hover {
+    opacity: 0.8;
+    background-color: var(--themecolor);
+    color:   var(--themecolor-font-altern3);
+}
+.section-login{
+    border: 1px solid var(--themecolor-border);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    
+    width: 450px; 
+    padding: 20px;
+
+} 
+.section-login .btn-primary {
+    width: 100%;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}

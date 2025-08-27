@@ -1,0 +1,25 @@
+:root {
+  
+  
+  --bs-primary: #5013a8;
+  --bs-secondary: #eeeaeb; 
+
+  --bs-primary-rgb:  80, 19, 168;
+  --bs-secondary-rgb:  238, 234, 253; 
+  --bs-body-color: #4a5565;
+  --bs-success: #0ba647;
+  --bs-success-rgb: 11,166,71;
+  --bs-danger:#e64444;
+  --bs-danger-rgb: 230,68,68;
+  
+  --bs-warning:#ffec3a;
+  --bs-warning-rgb: 255,236,58;  
+
+  --bs-card-border-color: var(--bs-secondary) !important;
+
+
+ --themecolor-border: #eeeaeb;  
+}
+
+
+ 

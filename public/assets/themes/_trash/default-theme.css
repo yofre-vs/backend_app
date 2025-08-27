@@ -1,0 +1,325 @@
+
+:root {
+  /* Paleta base */
+  --themecolor: #671cc9; 
+
+  --themecolor-bg: #f9f9f9;
+  --themecolor-bg-secondary: #F2F2F2;
+  --themecolor-bg-white: #fff;
+
+  --themecolor-border: #e5e5e5; 
+
+  --themecolor-text: #212529;
+  --themecolor-text-headline: #283252;
+  --themecolor-line : #e5e5e5; 
+  --themecolor-link : #c5c7d3; 
+  --themecolor-link-hover : #dee2e6; 
+
+  /* Marca */
+  --themecolor-primary: #0d6efd;
+  --themecolor-secondary: #6c757d;
+  --themecolor-accent: #6610f2;
+
+  /* Estados */
+  --themecolor-success: #198754;
+  --themecolor-warning: #ffc107;
+  --themecolor-danger: #dc3545;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: var(--themecolor-bg-secondary);
+  color:   var(--themecolor-text-headline);
+}
+.domainBase{}
+h1, h2, h3, h4{
+  
+  color: var(--themecolor-text-headline);
+  font-weight: 600;
+   
+
+}
+h2 {
+  font-size: 1.7rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+body .table td, .table th {
+    font-size: 1rem;
+}
+.border-themecolor-line{
+  
+  border-color: var(--themecolor-line) !important; 
+}
+aside,.sidebar{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:0;
+  z-index: 1030;
+  /*border-right: 1px solid var(--themecolor-line); */
+}
+main {
+  margin-left: 180px; /* espacio igual al sidebar */
+  height: 100vh;
+  overflow-y: auto;
+  padding: 0 0 0 1rem;
+  /*background-color: var(--themecolor-bg-secondary);  */
+  display: flex;
+  flex-direction: column;
+}
+/* Navegation*/
+.nav-link{
+  padding: 0px;
+  margin: 5px 0px 5px 15px;
+  color:   var(--themecolor-text-headline);
+  font-size: 0.9rem;   
+  /*width: 80px;*/
+}
+.nav-link:hover{
+   
+  color: var(--themecolor);
+}
+.nav-link.user{
+  text-align: center;
+}
+.nav-link.user:hover{
+   
+  background-color: var(--themecolor-bg-secondary);
+  text-align: center;
+}
+.img-user-session {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+      margin-bottom: 10px;
+}
+.button-main,
+.button-status-mtc{
+  
+  height: 38px;
+  line-height: 1.1;
+  font-size: .95rem; 
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 5px;
+  border: 0px;
+}
+.button-main{
+  padding: 8px 20px 8px 20px;
+  background-color: var(--themecolor);
+  color: #ffffff;
+  
+}
+.button-status-mtc{
+ /* padding: 8px;
+  background-color: var(  --themecolor-bg-white );
+  color: var( --themecolor-text );
+  //border: 1px solid var(--themecolor-border);*/
+
+  font-family: 'LineIconsPro Light', sans-serif;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  /*padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;*/
+}
+
+/* Ícono a la izquierda */
+.button-status-mtc::before {
+  font-family: 'LineIconsPro Light';
+  content: var(--icono);
+  margin-right: 8px; 
+  vertical-align: middle;
+}
+
+/* Texto desde CSS */
+.button-status-mtc::after {
+  content: var(--texto);
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+/* Estados */
+.boton-desconectado {
+  --icono: '\eaa2';
+  --texto: 'servicio desconectado';
+  background-color: #dc3545;
+  color: white;
+}
+
+.boton-conectado {
+  --icono: '\eaeb';
+  --texto: 'Conexion establecida';
+  background-color: #fff;
+  color: #28a745;
+  border: 1px solid #28a745;
+}
+
+.boton-fuera-horario {
+  --icono: '\eaa2';
+  --texto: 'Fuera de horario';
+  background-color: #e9ecef;
+  color: #adb5bd;
+  cursor: not-allowed;
+}
+.timeline {
+  position: relative;
+  margin-left: 12px;
+  padding-left: 20px;
+  border-left: 2px dashed #ccc;
+}
+
+.timeline-step {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-step::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: 4px solid var(--themecolor);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.step-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.step-items {
+  margin-left: 10px;
+}
+
+.step-items .item {
+  display: inline-block;
+  margin: 4px;
+  padding: 6px 12px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Opcional: último paso sin línea hacia abajo */
+.timeline-step:last-child::after {
+  content: none;
+}
+
+
+
+
+.section-container{
+  
+  border: 1px solid var(--themecolor-border) !important;
+  background-color: var( --themecolor-bg-white );
+  border-radius: 10px;
+  margin: 10px;
+}
+.section-container .s-top{
+  border-bottom: 1px solid var(--themecolor-border) !important;
+  padding:40px 10px 20px 10px ;
+}
+.section-container .s-left{
+  border-right: 1px solid var(--themecolor-border) !important; 
+  padding-right: 0px;
+}
+/*https://dribbble.com/shots/24010566-Tuduu-List-View
+https://cdn.dribbble.com/userupload/43420862/file/original-4267ffad9bbc1eb38d0df2fb4980a93b.png?resize=1600x1200&vertical=center*/
+
+
+/** MODULE CITV**/
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  pointer-events: none;
+}
+
+.input-with-icon input {
+  padding-left: 2rem; /* espacio para el ícono */
+}
+
+.btn-inspection{
+  height: 50px;
+  width: 100%;
+  text-align: left;
+  background-color: #fff;
+  border: none;
+  display:flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--themecolor-border) !important;/*
+  border-top: 1px solid var(--themecolor-border) !important;
+  border-right: 1px solid var(--themecolor-border) !important;*/
+}
+.btn-inspection:hover{
+  background-color: #f5f6fa;
+  /*border: 1px solid var(--themecolor) !important;*/
+}
+.btn-inspection h3{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 0px 10px 0px 0px;
+  font-weight: 600;
+}
+
+/**/
+.section-container .search{
+  padding-left: calc(var(--bs-gutter-x) * .5 );
+  padding-top: 10px;
+  padding-right: 10px;
+  
+  /*border-bottom: 1px solid var(--themecolor-border) !important; */
+} 
+.section-container .inspections{
+  
+  padding-left: calc(var(--bs-gutter-x) * .5 );
+  padding-right: calc(var(--bs-gutter-x) * .5 );
+
+}
+
+
+/* Contenedor animado que muestra los pasos como un carrusel */
+.transition-container {
+  width: 300%;
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Cada paso ocupa el 50% del contenedor (o 100% del modal) */
+.step {
+  flex: 0 0 33%;
+}
+ #NewInspection .modal-dialog{
+ max-width: 700px !important;
+}
+
+/*botton MTC*/
